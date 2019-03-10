@@ -1,0 +1,642 @@
+@font-face {
+    font-family: "Lato";
+    src: url('assets/fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Maven Pro";
+    src: url('assets/fonts/Maven/MavenPro-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: "Lato";
+    src: url('assets/fonts/Lato/Lato-Bold.ttf');
+    font-weight: bold;
+  }
+
+
+  @font-face {
+    font-family: "Maven Pro";
+    src: url('assets/fonts/Maven/MavenPro-Bold.ttf');
+    font-weight: bold;
+  }
+
+
+
+body{
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+/* header */ 
+
+header{
+    text-align: center;
+}
+
+
+
+
+
+.navigation{
+    background-color: #323232;
+
+}
+
+.menu{
+    margin: 0 auto;
+    width: 400px;
+    display: grid;
+    font-family: 'Lato', sans-serif;
+    grid-template-rows: 62px;
+    grid-template-columns: 90px 48px 120px 50px 93px; /*1 px above gr size*/
+    justify-items: center;
+    
+}
+
+
+
+header:after{
+    background-color: transparent;
+    content: "";
+    position: relative;
+    top: 27px;
+    text-align: center;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 26px 44px 0 44px;
+    border-color: #323232 transparent transparent transparent;
+}
+
+
+.header__left__bottom__border , .header__right__bottom__border {
+    position: relative;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 12px;
+    width: 41%;
+    border: 1px solid 
+    
+
+}
+
+.header__left__bottom__border{
+    float: left; 
+}
+
+.header__right__bottom__border {
+    float: right; 
+}
+
+.menu li{
+    list-style: none;
+    padding-top: 25px;
+}
+
+.menu li a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #f9f9f9;
+    text-transform: uppercase;
+}
+
+.menu li a:hover {
+    color: #2eb398;
+}
+
+#nav__triangle__p1 {
+    top: -10px;
+    left: 3px;
+    position :relative;
+    height: 50px;
+    width: 28px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transform: skew(30deg, 15deg);
+
+}
+
+
+#nav__triangle__p2 {
+    top: -62px;
+    left: 3px;
+    position :relative;
+    height: 50px;
+    width: 28px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: skew(-30deg, -15deg);
+
+}
+
+#triangle:hover a > div {
+    border-color: #2eb398;
+}
+
+/*main*/
+
+/*hexes*/
+
+.hexagons-container{
+   position: relative; 
+   top: -47px;
+}
+
+#hex_row_1_border, #hex_row_3_border{
+    position: relative;
+    width: 80.5%;
+    margin: 0 auto;
+    
+    box-sizing: content-box;
+    height: 104px;
+    border-left: 1px solid  #e4e9ec;
+    border-right: 1px solid  #e4e9ec;
+}
+
+#hex_row_1_border{
+    top: 128px;
+}
+
+
+#hex_row_3_border{
+    top: -325px;
+}
+
+
+.hexagon_all{
+    display: inline-block;
+    
+    box-sizing: content-box;
+    padding: 9px;
+}
+
+
+
+#hex_container_row_2{
+    /*border: 1px solid red;*/
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    top: -75px;
+}
+
+#hex_container_row_3{
+    position: relative;
+    top: -150px;
+}
+
+
+#hex_container_row_1 .hexagon_all:first-child,
+#hex_container_row_3 .hexagon_all:first-child
+{
+    margin-left: 11%;
+}
+
+
+.hexagon:hover{
+    opacity: 0.5;
+}
+
+
+.hexagon {
+  width: 178px;
+  height: 225px;
+  transform: rotate(120deg);
+  overflow: hidden;
+  
+}
+
+
+
+
+.hex-layer-1 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+}
+
+.hex-layer-2 {
+    
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: 50%;
+    transform: rotate(-60deg);
+     overflow: hidden;
+}
+
+
+
+#hex_img_1{
+    background-image: url('assets/pictures/Layer33.png');
+    background-position: 50% -170%;
+}
+
+#hex_img_2{
+    background-image: url('assets/pictures/Layer31.png');
+    background-position: 50% 0%;
+}
+
+#hex_img_3{
+    background-image: url('assets/pictures/Layer34.png');
+}
+
+#hex_img_4{
+    background-image: url('assets/pictures/Layer35.png');
+    background-position: 50% -220%;
+}
+
+#hex_img_5{
+    background-image: url('assets/pictures/Layer36.png');
+    background-position: 50% -100%;
+}
+
+#hex_img_6{
+    background-image: url('assets/pictures/Layer44.png');
+    background-position: 50% -160%;
+}
+
+#hex_img_7{
+    background-image: url('assets/pictures/Layer37.png');
+}
+
+#hex_img_8{
+    background-image: url('assets/pictures/Layer38.png');
+}
+
+#hex_img_9{
+    background-image: url('assets/pictures/Layer39.png');
+}
+
+#hex_img_10{
+    background-image: url('assets/pictures/Layer40.png');
+}
+
+#hex_img_11{
+    background-image: url('assets/pictures/Layer41.png');
+}
+
+#hex_img_12{
+    background-image: url('assets/pictures/Layer43.png');
+}
+
+#hex_img_13{
+    background-image: url('assets/pictures/Layer42.png');
+    background-position: 25% 100%;
+}
+
+#slider{
+    position: relative;
+    left: 3%;
+    margin-top: -214px;
+}
+
+
+#slider div {
+    width: 6px;
+    height: 6px;
+    padding: 0px;
+    margin-right: 3px;
+    background-color: #ded2c4;
+    display: inline-block;
+    float: left;
+}
+
+
+#slider #slider_selected{
+    background-color: #8b8784;
+}
+
+#hex_content_bottom_border{
+    width: 94%;
+    border: 1px solid #e5e9ec;
+    margin: 0 auto;
+    position: relative;
+    top: 19px;
+}
+
+/* info*/
+
+#info{
+    position: relative;
+    background-color: #2eb398;
+    top: -20px;
+    height: 340px;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    margin-bottom: 0px;
+}
+
+#info_grid_section {
+    height: 316px;
+    position: relative;
+    left: -2.5%;
+    top: 13px;
+    width: 80.5%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 26% 74%;
+    grid-template-rows: 110px 113px 46px;
+    border-left: 1px solid rgba(0,0, 0, 0.1);
+    border-right: 1px solid rgba(0,0, 0, 0.1);
+
+    
+}
+
+#info_grid_section div p{
+    color: #d7fcf5;
+    text-align: justify;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    line-height: 22PX;
+    padding-left: 5px;
+    padding-right: 20px;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+
+
+#first_column{
+    grid-area: 1/1/4/2;
+    justify-self: center;
+    align-self: center;
+}
+
+.about_hex{
+    position: relative;
+    top: 25px;
+    left: 3px;
+}
+
+
+#hex_img_photo{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url('assets/pictures/photo.png');
+}
+
+h1{
+    color: white;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 25.5px;
+    letter-spacing: 2.4px;
+
+}
+
+
+h2{
+    font-family: "Maven Pro", sans-serif;
+    letter-spacing: 0.9px;
+    position: relative;
+    bottom: -7px;
+    opacity: 0.5;
+}
+
+#about_head_text{
+    position: relative;
+    top: -14px;
+    align-self: end;
+    padding-left: 3px;
+    opacity: 0.8;
+    line-height: 19px;
+}
+
+
+#social_icons{
+    justify-self: end;
+    align-self: end;
+    padding-right: 20px;
+    position: relative;
+    top: -6px;
+    left: -5px;
+}
+
+
+
+.icon-facebook, .icon-twitter,
+.icon-gplus, .icon-pinterest,
+.icon-linkedin, .icon-dribbble{
+    color: #2eb398;
+    
+    box-sizing: content-box;
+    float: left;
+    width: 24px;
+    height: 24px;
+    font-size: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-facebook, 
+.icon-pinterest,
+.icon-linkedin{
+    background-color: rgba(255,255,255,0.6);
+}
+
+.icon-twitter,
+.icon-gplus,
+.icon-dribbble{
+    background-color: rgba(255,255,255,0.4);
+}
+
+
+
+.icon-facebook:hover, .icon-twitter:hover,
+.icon-gplus:hover, .icon-pinterest:hover,
+.icon-linkedin:hover, .icon-dribbble:hover{
+    color: white;
+}
+
+.icon-facebook:hover{
+    background-color: #35609f;
+}
+
+.icon-twitter:hover{
+    background-color: #2daae1;
+}
+
+.icon-gplus:hover{
+    background-color: #dc5443;
+}
+
+.icon-pinterest:hover{
+    background-color: #cb2027;
+}
+
+.icon-linkedin:hover{
+background-color: #096c9b;
+}
+
+.icon-dribbble:hover{
+    background-color: #ef558f;
+}
+
+a:hover, a:active, a:focus {
+    outline: 0;
+    border: none;
+  }
+
+
+
+/*footer*/
+
+#get_in_touch_block{
+    position: relative;
+    top: -22px; 
+    padding: 65px 11% 65px 11.7%;
+    background-color: #323232;
+    color: white;
+    display: grid;
+    grid-template-columns: 75% 25%;
+
+}
+
+
+
+legend h4{
+    font-family: "Maven Pro", sans-serif;
+    font-size: 29.5px;
+    color: #e0e0e0;
+    position: relative;
+    left: 1px;
+  
+}
+
+legend h5{
+    font-family: "Maven Pro", sans-serif;
+    font-size: 18px;
+    color: #bebebe;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+legend{
+    margin-bottom: 13px;
+}
+
+.contact_form input, .contact_form textarea{
+    
+    font-size: 11px;
+    padding-left: 15px;
+    width: 95.5%;
+    background-color: #454545;
+    margin-bottom: 8px;
+    margin-top: 7px;
+    border: none;
+    color: #bebebe;
+}
+
+
+.contact_form input::placeholder, 
+.contact_form textarea::placeholder{
+    color: #bebebe;
+    font-family: "Maven Pro", sans-serif;
+}
+
+.contact_form input{
+    height: 38px;
+}
+
+.contact_form textarea{
+    resize: none;
+    height: 138px;
+    padding-top: 10px;
+}
+
+input.subject{
+    height: 38px;
+}
+
+.contact_form button{
+    display: block;
+    color: #d7fcf5;
+    background-color: #2eb398;
+    font-family: "Maven Pro", sans-serif;
+    text-transform: uppercase;
+    border: none;
+    width: 90px;
+    height: 38px;
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.9;
+    display: grid;
+    float: right;
+    margin-top: 7px;
+    margin-right: 9px;
+}
+
+#in_touch_text{
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    line-height: 22.8px;
+    margin-top: 63px;
+    padding-left: 10px;
+    word-spacing: 4px;
+    color: #bebebe;
+}
+
+#in_touch_text span{
+    font-weight: bold;
+}
+
+
+
+#in_touch_contacts{
+    color: #bebebe;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 7px;
+    line-height: 18px;
+    padding-top: 35px;
+}
+
+#in_touch_contacts p:last-child{
+    position: relative;
+    top: 5px;
+}
+
+.icon-location,
+.icon-phone,
+.icon-mail{
+    color: #2eb398;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#footer_border_top, #footer_border_bottom{
+    position: relative;
+    content: "";
+    width: 94%;
+    border-top: 1px solid #2b2b2b;
+    z-index: 1;
+    margin: 0 auto;
+   
+}
+
+#footer_border_top{
+    top: -5px;
+}
+
+#footer_border_bottom{
+    top: -35px;
+}
+
+/*copyright section*/
+
+#copyright_block{
+    position: relative;
+    top: -23px;
+    background-color: #222222;
+    color: #3d3d3d;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 11.5px;
+    padding-left: 4%;
+    padding-top: 13px;
+    padding-bottom: 20px;
+
+}
